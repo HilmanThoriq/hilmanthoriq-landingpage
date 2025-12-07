@@ -9,5 +9,11 @@ export default defineConfig({
     allowedHosts: ['ying-sequential-taciturnly.ngrok-free.dev'],
     host: true
   },
-
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  },
 })
